@@ -1,6 +1,7 @@
 @import '_vars';
 @import '_global';
 @import '_fonts';
+// start header
 .header {
     background-color: #87509c;
     // max-height: 595px;
@@ -63,6 +64,27 @@
     }
 }
 
+// end header
+// start service
+.services {
+    background-color: $green;
+    position: relative;
+}
+
+.services__title {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.services__text {
+    font-size: 18px;
+    @include f400;
+    color: #fff;
+}
+
+// end service
 .avatar {
     width: 200px;
     height: 200px;
@@ -73,4 +95,10 @@
         width: 32px;
         height: 32px;
     }
+}
+
+// images in the .portfolio
+.portfolio__item-img {
+    width: 541px;
+    height: 311px;
 }
