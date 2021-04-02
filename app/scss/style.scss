@@ -71,7 +71,15 @@
     position: relative;
 }
 
+.title {
+    img {
+        padding-top: 20px;
+        padding-bottom: 23px;
+    }
+}
+
 .services__title {
+    text-align: center;
     img {
         display: block;
         margin: 0 auto;
@@ -82,12 +90,82 @@
     font-size: 18px;
     @include f400;
     color: #fff;
+    text-align: center;
+}
+
+.services__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 33px 0 33px;
+}
+
+.item {
+    text-align: center;
+    margin-bottom: 130px;
+    img {
+        margin-bottom: 45px;
+    }
+    &__title {
+        font-size: 24px;
+        @include f700;
+        color: #fff;
+        margin-bottom: 18px;
+    }
+    &__text {
+        font-size: 16px;
+        color: #fff;
+        @include f300;
+        line-height: 24px;
+        margin: 0 auto;
+    }
 }
 
 // end service
+// start team
+.team {
+    background-color: $greyfon;
+    &__title {
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.team__items-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__text {
+    margin-bottom: 83px;
+    color: #3c4761;
+    @include f400;
+}
+
+.item__card {
+    margin-left: 33px;
+    text-align: center;
+}
+
 .avatar {
     width: 200px;
     height: 200px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.autor__position {
+    margin: 16px 0px 30px;
+    color: #30bae7;
+    font-size: 16px;
+}
+
+.autor__name {
+    color: #27283d;
+    @include f700;
+    font-size: 24px;
 }
 
 .autor__social {
@@ -97,6 +175,52 @@
     }
 }
 
+.autor__social {
+    margin: 35px 0 125px;
+}
+
+// end team
+// start portfolio
+.skills__title {
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.skills__progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+// end portfolio
+// start comment
+.comment {
+    background-color: #d74680;
+}
+
+.avatar__card {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #787878;
+}
+
+.comment__title {
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.comment__card-inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+// end comment
 // images in the .portfolio
 .portfolio__item-img {
     width: 541px;
